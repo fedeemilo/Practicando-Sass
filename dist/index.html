@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Saas Tutorial</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body class="light">
+		<div class="main">
+			<h1>Practicando Sass + jQuery + Flexbox</h1>
+			<h2>Dark / Light Theme</h2>
+
+			<p class="main__paragraph">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+				mollitia minus itaque excepturi labore esse eius dolores recusandae
+				architecto doloribus, omnis nemo quas optio eos non facere modi debitis
+				porro. Asperiores perspiciatis culpa sint quae perferendis autem
+				incidunt a, totam obcaecati voluptatem at minus inventore corrupti
+				iusto, excepturi quis error dolor officia deserunt? Totam rerum
+				voluptatibus impedit et, eius recusandae! Repellat cupiditate, deleniti
+				ipsam recusandae molestiae maiores nisi doloremque commodi optio? Ex
+				nemo, exercitationem perferendis veniam labore rem molestias dolorum
+				aliquam quas porro cum similique nulla nam sunt accusantium sit! Dolore
+				consequatur quisquam aspernatur labore, animi praesentium? Aut
+				consequuntur architecto porro tempore culpa ipsa? Temporibus delectus
+				accusamus voluptatibus quasi. Iusto culpa ab dolores accusantium,
+				cupiditate asperiores autem adipisci mollitia cum! Explicabo cupiditate
+				dolorem, natus quasi porro at accusantium quas perspiciatis repellat!
+				Quod qui id nihil laboriosam ratione? Cum adipisci voluptates quidem.
+				Fugiat voluptatibus sit illum, inventore praesentium nobis omnis
+				blanditiis?
+			</p>
+			<p class="main__paragraph">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+				mollitia minus itaque excepturi labore esse eius dolores recusandae
+				architecto doloribus, omnis nemo quas optio eos non facere modi debitis
+				porro. Asperiores perspiciatis culpa sint quae perferendis autem
+				incidunt a, totam obcaecati voluptatem at minus inventore corrupti
+				iusto, excepturi quis error dolor officia deserunt? Totam rerum
+				voluptatibus impedit et, eius recusandae! Repellat cupiditate, deleniti
+				ipsam recusandae molestiae maiores nisi doloremque commodi optio? Ex
+				nemo, exercitationem perferendis veniam labore rem molestias dolorum
+				aliquam quas porro cum similique nulla nam sunt accusantium sit! Dolore
+				consequatur quisquam aspernatur labore, animi praesentium? Aut
+				consequuntur architecto porro tempore culpa ipsa? Temporibus delectus
+				accusamus voluptatibus quasi. Iusto culpa ab dolores accusantium,
+				cupiditate asperiores autem adipisci mollitia cum! Explicabo cupiditate
+				dolorem, natus quasi porro at accusantium quas perspiciatis repellat!
+				Quod qui id nihil laboriosam ratione? Cum adipisci voluptates quidem.
+				Fugiat voluptatibus sit illum, inventore praesentium nobis omnis
+				blanditiis?
+			</p>
+			<button class="switch light">DARK/LIGHT</button>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script>
+			const $switch = $('.switch');
+			const $body = $('body');
+
+			$switch.on('click', () => {
+				$body.toggleClass('light');
+			});
+		</script>
+	</body>
+</html>

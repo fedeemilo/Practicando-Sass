@@ -1,0 +1,11 @@
+// Pequeña porción de código CSS en un archivo Sass
+// Sirve para modularizar CSS y hacer que todo sea más fácil de mantener
+// Partial -> un archivo Sass que comienza con un guión bajo (_ejemplo.scss)
+// Con ese guión bajo se le indica a Sass que el archivo es un Partial y no debe generar un archivo CSS
+// El compilador ignorará esos archivos que comiencen con un guión bajo
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+

@@ -1,0 +1,46 @@
+@import './resets';
+@import './variables';
+@import './mixins';
+@import './functions';
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+body {
+	background: $primary-color;
+	color: $text-color;
+	font-family: $font-family;
+	height: 100%;
+}
+
+// Nest in Sass
+.main {
+	@include flexCenter(column);
+	width: 80%;
+	margin: 0 auto;
+	border: 5px solid black;
+	border-radius: 15px;
+	transform: translateY(15%);
+
+	#{&}__paragraph {
+		font-weight: weight(bold);
+		padding: 20px;
+		text-align: center;
+		transition: 0.9s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.light {
+	@include theme($light-theme: true);
+}
+
+.switch {
+	@include switchButton();
+	@include theme($light-theme: false);
+	&:hover {
+		background: $primary-color;
+		color: $text-color;
+	}
+}
